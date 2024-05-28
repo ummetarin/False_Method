@@ -6,6 +6,10 @@
 #define F(x) (x)
 
 int main(){
+
+    float x0,x1,x2,f0,f1,f2;
+
+    
  
    
 

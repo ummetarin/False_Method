@@ -2,8 +2,8 @@
 #include<conio.h>
 #include<math.h>
 
-#define E 0.001
-#define F(x) (x)
+#define E 0.00001
+#define F(x) (log10(x)-3*x)
 
 int main(){
 
@@ -27,7 +27,7 @@ int main(){
         f1=F(x1);
         f2=F(x2);
 
-        x0=(x1+x2)/2;
+        x0=((f2*x1-f1*x2)/(f2-f1));
         f0=F(x0);
 
         if(f0*f1<0){
@@ -39,7 +39,7 @@ int main(){
      
     } while (fabs(f0) > E);
     
-    
+    printf("The root is = %f",x0);
     
     
  

@@ -9,6 +9,12 @@ int main(){
 
     float x0,x1,x2,f0,f1,f2;
 
+    do
+    {
+        printf("X1 = ");
+        scanf("%f",&x1);
+        
+    } while (F(x1)<0);
     
  
    
